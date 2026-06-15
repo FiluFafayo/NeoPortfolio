@@ -1,0 +1,43 @@
+/* Footer Styles */
+
+.footer {
+  background-color: var(--color-ink-black);
+  color: var(--color-white);
+  padding: 48px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.footer-brand .motif {
+  color: var(--color-clay-red);
+  font-size: 24px;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .footer-brand {
+    justify-content: center;
+  }
+}
